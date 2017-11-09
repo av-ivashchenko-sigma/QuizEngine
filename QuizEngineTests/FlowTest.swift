@@ -76,21 +76,66 @@ class FlowTest: XCTestCase {
     XCTAssertEqual(router.routedQuestions, ["Q1"])
   }
   
+  func testStartWithNoQuestions_doesntRouteToResult() {
+    makeSUT(questions: []).start()
+    
+    XCTAssertEqual(router.routedResult!, [:])
+  }
   
+  func testStartWithOneQuestion_doesntRouteToResult() {
+    makeSUT(questions: ["Q1"]).start()
+    
+    XCTAssertNil(router.routedResult)
+  }
   
+  func test_startAndAnswerFirstQuestion_withOneQuestion_routesToResult() {
+    let sut = makeSUT(questions: ["Q1"])
+    sut.start()
+    
+    router.answerCallback("A1")
+    
+    XCTAssertEqual(router.routedResult!, ["Q1": "A1"])
+
+  }
+  
+  func test_startAndAnswerFirstQuestion_withTwoQuestions_doesntRouteToResult() {
+    let sut = makeSUT(questions: ["Q1", "Q2"])
+    sut.start()
+    
+    router.answerCallback("A1")
+    
+    XCTAssertNil(router.routedResult)
+  }
+  
+  func test_startAndAnswerFirstAndSecondQuestion_withTwoQuestion_routesToResult() {
+    let sut = makeSUT(questions: ["Q1", "Q2"])
+    sut.start()
+    
+    router.answerCallback("A1")
+    router.answerCallback("A2")
+    
+    XCTAssertEqual(router.routedResult!, ["Q1": "A1", "Q2": "A2"])
+  }
+
   //MARK: Helpers
   
-  func makeSUT(questions: [String]) -> Flow {
+  func makeSUT(questions: [String]) -> Flow<String, String, RouterSpy> {
     return Flow(questions: questions, router: router)
   }
   
   class RouterSpy: Router {
-    var routedQuestions: [String] = []
-    var answerCallback: Router.AnswerCallback = { _ in }
     
-    func route(to question: String, answerCallback: @escaping Router.AnswerCallback) {
+    var routedQuestions: [String] = []
+    var routedResult: [String: String]? = nil
+    var answerCallback: (String) -> Void = { _ in }
+    
+    func routeTo(question: String, answerCallback: @escaping (String) -> Void) {
       routedQuestions.append(question)
       self.answerCallback = answerCallback
+    }
+    
+    func routeTo(result: [String: String]) {
+      routedResult = result
     }
   }
   
