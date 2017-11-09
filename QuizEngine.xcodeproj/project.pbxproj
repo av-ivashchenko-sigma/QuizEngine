@@ -10,6 +10,8 @@
 		FA09726D1FA23EFE006C4E0A /* QuizEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0972631FA23EFE006C4E0A /* QuizEngine.framework */; };
 		FA09727F1FA23FA5006C4E0A /* FlowTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09727E1FA23FA5006C4E0A /* FlowTest.swift */; };
 		FA0972811FA240C8006C4E0A /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0972801FA240C8006C4E0A /* Flow.swift */; };
+		FA29583D1FB4B60F0061796D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29583C1FB4B60F0061796D /* Result.swift */; };
+		FA29583F1FB4B63B0061796D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29583E1FB4B63B0061796D /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +32,8 @@
 		FA09727D1FA23FA5006C4E0A /* QuizEngineTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuizEngineTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		FA09727E1FA23FA5006C4E0A /* FlowTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowTest.swift; sourceTree = "<group>"; };
 		FA0972801FA240C8006C4E0A /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
+		FA29583C1FB4B60F0061796D /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		FA29583E1FB4B63B0061796D /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 			children = (
 				FA0972671FA23EFE006C4E0A /* Info.plist */,
 				FA0972801FA240C8006C4E0A /* Flow.swift */,
+				FA29583C1FB4B60F0061796D /* Result.swift */,
+				FA29583E1FB4B63B0061796D /* Router.swift */,
 			);
 			path = QuizEngine;
 			sourceTree = "<group>";
@@ -199,6 +205,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA29583D1FB4B60F0061796D /* Result.swift in Sources */,
+				FA29583F1FB4B63B0061796D /* Router.swift in Sources */,
 				FA0972811FA240C8006C4E0A /* Flow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
