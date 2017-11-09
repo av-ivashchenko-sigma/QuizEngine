@@ -1,6 +1,6 @@
 import Foundation
 
-protocol Router {
+public protocol Router {
   associatedtype Question: Hashable
   associatedtype Answer
   
@@ -8,4 +8,4 @@ protocol Router {
   
   func routeTo(question: Question, answerCallback: @escaping AnswerCallback)
   func routeTo(result: Result<Question, Answer>)
-}
+} 
