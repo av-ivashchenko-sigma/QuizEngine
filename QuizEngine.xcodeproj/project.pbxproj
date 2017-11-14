@@ -667,7 +667,7 @@
 				FA0972761FA23EFE006C4E0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		FA0972771FA23EFE006C4E0A /* Build configuration list for PBXNativeTarget "QuizEngine" */ = {
 			isa = XCConfigurationList;
@@ -676,7 +676,7 @@
 				FA0972791FA23EFE006C4E0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		FA09727A1FA23EFE006C4E0A /* Build configuration list for PBXNativeTarget "QuizEngineTests" */ = {
 			isa = XCConfigurationList;
@@ -685,7 +685,7 @@
 				FA09727C1FA23EFE006C4E0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		FA834C7A1FB5FC340072F142 /* Build configuration list for PBXNativeTarget "QuizEngine_iOS" */ = {
 			isa = XCConfigurationList;
@@ -694,7 +694,7 @@
 				FA834C771FB5FC340072F142 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		FA834C7B1FB5FC340072F142 /* Build configuration list for PBXNativeTarget "QuizEngine_iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -703,7 +703,7 @@
 				FA834C791FB5FC340072F142 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

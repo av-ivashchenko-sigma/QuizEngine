@@ -7,12 +7,25 @@
 		<key>QuizEngine.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>QuizEngine_iOS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>FA0972621FA23EFE006C4E0A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA09726B1FA23EFE006C4E0A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
